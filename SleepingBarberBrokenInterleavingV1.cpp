@@ -35,7 +35,9 @@
                 Namespaces
 
 ****************************************************/
+
 using namespace std;
+
 
 
 /***************************************************
@@ -92,7 +94,7 @@ public:
 private:
     static const int count_max = 1;
     int count_;
-    mutex m_;
+    std::mutex m_;
     std::condition_variable cv_;
 };
 
